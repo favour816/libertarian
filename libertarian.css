@@ -1,0 +1,63 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.parent{
+    min-height: 500px;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(6,1fr);
+    gap: 5px;
+    background-color: #E60000;
+}
+.parent > div{
+    /* border: 1px solid; */
+    align-items: center;
+}
+.parent > div:first-child{
+    background-color: white;
+    grid-column: span 6;
+    padding-left: 50px;
+    padding-top: 50px;
+    color: red;
+}
+.parent > div:nth-child(2){
+    background-color:#E60000;
+    grid-column: span 3;
+    grid-row: span 3;
+    color: white;
+    padding-top: 50px;
+    padding-left: 50px;
+}
+.parent > div:nth-child(3){
+    background-color:#E60000;
+    grid-column: span 3;
+    grid-row: span 3;
+    margin: auto;
+}
+.parent > div:nth-child(4){
+    background-color: brown;
+    grid-column: span 2;
+    grid-row: span 2;
+    padding: 50px ;
+}
+.parent > div:nth-child(5){
+    background-color: brown;
+    grid-column: span 2;
+    grid-row: span 2;
+    padding: 50px;
+}
+.parent > div:last-child{
+    background-color: brown;
+    grid-column: span 2;
+    grid-row: span 2;
+    padding: 50px;
+}
+.parent > div p{
+    padding-top: 30px;
+    color: rgba(255, 255, 255, 0.664);
+}
+.parent > div h3{
+    color: white;
+}
